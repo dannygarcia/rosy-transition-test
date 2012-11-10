@@ -1,0 +1,48 @@
+/*
+File: _page-control.scss
+
+Description:
+	An iOS-style Page Control
+
+Requires:
+	- Sass
+	- Compass
+
+*/
+.page-control {
+  overflow: hidden;
+  position: relative;
+}
+.page-control > ul:nth-child(1) {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+.page-control > ul:nth-child(1) > li {
+  float: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.page-control > .page-indicators {
+  top: 270px;
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+  text-align: center;
+}
+.page-control > .page-indicators li {
+  margin: 0 3px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: red;
+  opacity: 0.6;
+  border-radius: 3px;
+}
+.page-control > .page-indicators li.active {
+  opacity: 1;
+}

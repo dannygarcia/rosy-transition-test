@@ -1,0 +1,11 @@
+$DEBUG: true !default;
+
+@import "caboose";
+
+.test-1 {
+	@extend %debug !optional;
+}
+
+.test-2 {
+	@extend %debug !optional;
+}

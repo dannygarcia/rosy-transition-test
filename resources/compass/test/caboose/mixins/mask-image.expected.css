@@ -1,0 +1,23 @@
+.test-1 {
+  -webkit-mask-image: -webkit-linear-gradient(#000000, #ffffff);
+  -moz-mask-image: -moz-linear-gradient(#000000, #ffffff);
+  -ms-mask-image: -ms-linear-gradient(#000000, #ffffff);
+  -o-mask-image: -o-linear-gradient(#000000, #ffffff);
+  mask-image: linear-gradient(#000000, #ffffff);
+}
+
+.test-2 {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(40%%, black), color-stop(60%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  -moz-mask-image: -moz-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(40%%, black), color-stop(60%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  -ms-mask-image: -ms-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(40%%, black), color-stop(60%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  -o-mask-image: -o-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(40%%, black), color-stop(60%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  mask-image: gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(40%%, black), color-stop(60%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+}
+
+.test-3 {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(20%%, black), color-stop(80%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  -moz-mask-image: -moz-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(20%%, black), color-stop(80%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  -ms-mask-image: -ms-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(20%%, black), color-stop(80%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  -o-mask-image: -o-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(20%%, black), color-stop(80%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+  mask-image: gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(20%%, black), color-stop(80%%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+}

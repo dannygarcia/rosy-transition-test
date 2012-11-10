@@ -1,0 +1,9 @@
+@import "caboose";
+
+.test-1 {
+	@extend %position-zero;
+}
+
+.test-2 {
+	@extend %position-zero;
+}

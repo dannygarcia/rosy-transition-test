@@ -1,0 +1,9 @@
+@import "caboose";
+
+.test-1 {
+	@include truncate(100px);
+}
+
+.test-2 {
+	@include truncate(100%);
+}

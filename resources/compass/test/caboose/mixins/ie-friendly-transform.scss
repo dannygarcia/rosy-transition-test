@@ -1,0 +1,5 @@
+@import "caboose";
+
+.test-1 {
+	@include ie-friendly-transform(translateX(100px) translateY(100px));
+}

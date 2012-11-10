@@ -1,0 +1,13 @@
+@import "caboose";
+
+.test-1 {
+	@include mask-image(linear-gradient(#000, #fff));
+}
+
+.test-2 {
+	@include fade-mask(40%, horizontal);
+}
+
+.test-3 {
+	@include fade-mask(20%, vertical);
+}

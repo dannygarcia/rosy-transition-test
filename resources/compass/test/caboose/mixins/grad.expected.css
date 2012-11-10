@@ -1,0 +1,8 @@
+.test-1 {
+  background-color: #7f7f7f;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#ffffff, #000000);
+  background-image: -moz-linear-gradient(#ffffff, #000000);
+  background-image: -o-linear-gradient(#ffffff, #000000);
+  background-image: linear-gradient(#ffffff, #000000);
+}

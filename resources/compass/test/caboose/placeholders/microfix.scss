@@ -1,0 +1,9 @@
+@import "caboose";
+
+.test-1 {
+	@extend %microfix;
+}
+
+.test-2 {
+	@extend %microfix;
+}

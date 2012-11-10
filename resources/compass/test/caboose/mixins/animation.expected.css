@@ -1,0 +1,87 @@
+@-moz-keyframes test {
+  from {
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  to {
+    -moz-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@-webkit-keyframes test {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  to {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@-o-keyframes test {
+  from {
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  to {
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes test {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(100px);
+  }
+}
+
+.test-1 {
+  -webkit-animation-name: test;
+  -moz-animation-name: test;
+  -o-animation-name: test;
+  animation-name: test;
+  -webkit-animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  -o-animation-duration: 100ms;
+  animation-duration: 100ms;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.test-2 {
+  -webkit-animation: test 100ms 2s linear infinte reverse forwards running;
+  -moz-animation: test 100ms 2s linear infinte reverse forwards running;
+  -o-animation: test 100ms 2s linear infinte reverse forwards running;
+  animation: test 100ms 2s linear infinte reverse forwards running;
+}

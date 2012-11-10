@@ -1,0 +1,9 @@
+@import "caboose";
+
+.test-1 {
+	@extend %scrollable;
+}
+
+.test-2 {
+	@extend %scrollable;
+}

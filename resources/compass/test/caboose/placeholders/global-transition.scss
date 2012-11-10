@@ -1,0 +1,9 @@
+@import "caboose";
+
+.test-1 {
+	@extend %global-transition;
+}
+
+.test-2 {
+	@extend %global-transition;
+}

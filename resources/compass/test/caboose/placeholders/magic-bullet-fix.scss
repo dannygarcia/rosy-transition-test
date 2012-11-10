@@ -1,0 +1,9 @@
+@import "caboose";
+
+.test-1 {
+	@extend %magic-bullet-fix;
+}
+
+.test-2 {
+	@extend %magic-bullet-fix;
+}

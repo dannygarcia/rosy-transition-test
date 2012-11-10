@@ -1,0 +1,26 @@
+@import "caboose";
+
+@include keyframes("test") {
+	from {
+		@include translateX(0px);
+	}
+
+	to {
+		@include translateX(100px);
+	}
+}
+
+.test-1 {
+	@include animation-name(test);
+	@include animation-duration(100ms);
+	@include animation-delay(2s);
+	@include animation-timing-function(linear);
+	@include animation-iteration-count(infinite);
+	@include animation-direction(reverse);
+	@include animation-fill-mode(forwards);
+	@include animation-play-state(running);
+}
+
+.test-2 {
+	@include animation(test 100ms 2s linear infinte reverse forwards running);
+}

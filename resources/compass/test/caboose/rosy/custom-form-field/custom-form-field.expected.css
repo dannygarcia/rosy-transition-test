@@ -1,0 +1,55 @@
+/*
+File: _custom-form-field.scss
+
+Description:
+	Custom Form Field styles
+
+Requires:
+	- Sass
+	- Compass
+
+*/
+.customfield {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.customfield input[type="radio"], .customfield input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+}
+.customfield.customfield-select {
+  position: relative;
+}
+.customfield.customfield-select select {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.customfield.customfield-select ul {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+.customfield.customfield-select .customfield-current, .customfield.customfield-select li {
+  display: block;
+  white-space: nowrap;
+}
+.customfield.customfield-select.customfield-select-active {
+  position: relative;
+  z-index: 10;
+}
+.customfield.customfield-select.customfield-select-active ul {
+  display: block;
+}
+.customfield.customfield-custom-select select {
+  visibility: hidden;
+}
+.customfield.customfield-radio, .customfield.customfield-checkbox {
+  position: relative;
+}

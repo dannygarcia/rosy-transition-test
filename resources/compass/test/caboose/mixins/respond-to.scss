@@ -1,0 +1,18 @@
+@import "caboose";
+
+.test-1 {
+	$i: 0px;
+
+	$queries: handheld, handheld-landscape, handheld-portrait,
+				tablet, tablet-landscape, tablet-portrait,
+				tablet-large, tablet-large-landscape, tablet-large-portrait,
+				desktop, desktop-large, retina;
+
+	@each $query in $queries {
+		$i: $i + 100;
+
+		@include respond-to($query) {
+			width: $i;
+		}
+	}
+}

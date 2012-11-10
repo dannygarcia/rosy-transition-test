@@ -1,0 +1,5 @@
+@import "caboose";
+
+.test-1 {
+	@include grad(#fff, #000);
+}
