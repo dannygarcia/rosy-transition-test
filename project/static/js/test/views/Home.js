@@ -18,7 +18,8 @@ define(
 					$tr : $('.transitional')
 				});
 
-				$('body').on("click", this.proxy(function () {
+				$('.content').on("click touchstart", this.proxy(function (e) {
+					e.preventDefault();
 
 					var color = '#' + Math.floor(Math.random() * 16777215).toString(16),
 						item = '<li style="background-color:' + color + ';"><span>Random Item</span></li>';
