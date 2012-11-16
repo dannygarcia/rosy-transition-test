@@ -69,5 +69,3 @@ project/static/css/*/*/*.css
 project/static/js/*.min.js
 project/static/js/*/*.min.js
 project/static/js/*/*/*.min.js
-
-deploy/
