@@ -13,19 +13,42 @@
 	.transitional {
 
 		.content {
-			width: 500px;
-			height: 200px;
-			background: gray;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #333;
 		}
 
 		.item {
 			width: 100%;
 			height: 100%;
-			display: block;
 			background: green;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
 
-			&:last-child {
+			span {
+				display: block;
+				position: absolute;
+				top: 48%;
+				width: 100%;
+				text-align: center;
+				color: white;
+				font-weight: bold;
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 20px;
+				opacity: 0.8;
+			}
+
+			&.two {
 				background: red;
+			}
+
+			&.three {
+				background: black;
 			}
 		}
 	}
@@ -36,23 +59,25 @@
 	.content {
 		position: relative;
 		overflow: hidden;
+		@include perspective(1000px);
 
 		.item {
 			position: absolute;
 			top: 0;
 			left: 0;
 			opacity: 0;
-			@include transform(scale(0) translateX(100%));
+			@include transform-origin(center center);
+			@include transform(translateZ(-1000px) rotateX(90deg));
 			@include single-transition(all, 1000ms, ease);
 
 			&[data-state="in"] {
 				opacity: 1;
-				@include transform(scale(1) translateX(0));
+				@include transform(translateZ(0px) rotateX(0deg));
 			}
 
 			&[data-state="out"] {
 				opacity: 0;
-				@include transform(scale(2) translateX(-100%));
+				@include transform(translateZ(-1000px) rotateX(-90deg));
 			}
 		}
 	}

@@ -19,9 +19,14 @@ define(
 				});
 
 				$('body').on("click", this.proxy(function () {
-					// this.testTransitional.transition($('<li>FAKE ITEM</li>'));
-					var rand = Math.floor(Math.random() * 3);
-					this.testTransitional.transitionTo(rand);
+
+					var color = '#' + Math.floor(Math.random() * 16777215).toString(16),
+						item = '<li style="background-color:' + color + ';"><span>Random Item</span></li>';
+
+					this.testTransitional.transition($(item));
+					// var rand = Math.floor(Math.random() * 3);
+					// this.testTransitional.transitionTo(rand);
+
 				}));
 
 			},
